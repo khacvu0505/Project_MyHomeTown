@@ -1,0 +1,768 @@
+html,
+body {
+    font-family: "Work Sans", sans-serif;
+}
+/* Header  */
+header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: #c6e6f8;
+}
+.header__contact {
+    background: #2389b2;
+    padding: 0.5em 1em;
+}
+.header .header__contact .row .gmail a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.header .header__contact .row .gmail a:hover {
+    color: #00a98f;
+}
+.header .icons i {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    transition: all 0.5s;
+}
+.header .icons i:hover {
+    border: 1px solid white;
+    background-color: #2389b2;
+    color: white;
+    cursor: pointer;
+}
+.header__nav {
+    background-attachment: fixed;
+}
+.header__nav #logo p {
+    font-size: 13px;
+    color: #2389b2;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.header__nav #logo h1 {
+    color: #282828;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 2.2rem;
+}
+.navbar-nav .nav-item .nav-link {
+    color: black;
+}
+.navbar-nav .nav-item::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    display: block;
+    background-color: #2389b2;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-item {
+    margin: 0px 15px;
+}
+.navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+.navbar-nav .nav-item:hover .nav-link {
+    color: #2389b2;
+    transition: all 0.5s;
+}
+.navbar-nav .nav-item.active::after {
+    width: 100%;
+}
+.header .navbar-nav .nav-item.active a {
+    color: #2389b2;
+}
+.header .navbar-nav .dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.header .navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+    transition: all 0.7s;
+}
+.header .navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #2389b2;
+    background-color: transparent;
+}
+.header .header__nav .navbar-collapse .navbar-nav {
+    margin-top: -20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .header__nav #logo h1 {
+        font-size: 2re m;
+    }
+    .navbar-nav .nav-item {
+        margin: 0px 5px;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 0px;
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding: 0px;
+        font-size: 16px;
+    }
+}
+/* Carousel  */
+
+.img_banner {
+    height: 720px;
+}
+.carouselInstruction #myCarousel .carousel-indicators {
+    top: 70%;
+}
+.carouselInstruction #myCarousel .carousel-indicators li {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+}
+#myCarousel .carousel-indicators li.active {
+    background-color: white;
+}
+#myCarousel .carousel-caption {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+#myCarousel .carousel-caption h3 {
+    font-size: 3.3rem;
+    font-weight: 300;
+}
+#myCarousel .carousel-caption h3 span {
+    font-weight: 600;
+}
+#myCarousel .carousel-caption p {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: 30px;
+    font-weight: 300;
+}
+.carouselInstruction .modal-title {
+    font-size: 29px;
+    color: #2389b2;
+    font-weight: 600;
+}
+.carousel-inner .carousel-item button {
+    padding: 11px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    color: white;
+    transition: all 0.5s;
+
+    outline: none;
+}
+.carousel-inner .carousel-item button:hover {
+    background: #2389b2;
+    border: 1px solid #2389b2;
+}
+.carousel-inner .carousel-Overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.carouselInstruction {
+    position: relative;
+}
+@media screen and (max-width: 595px) {
+    #myCarousel .carousel-caption p {
+        margin: 1rem 1rem;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+    #myCarousel .carousel-caption h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    #myCarousel .carousel-caption {
+        top: 42%;
+    }
+    .carouselInstruction #myCarousel .carousel-indicators {
+        top: 92%;
+    }
+    .carousel-inner .carousel-item button {
+        padding: 7px 12px;
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 0.6rem;
+        color: white;
+        transition: all 0.5s;
+        outline: none;
+    }
+}
+
+/* Responsive Carousel */
+@media screen and (max-width: 584px) {
+    #myCarousel .carousel-caption {
+        top: 38%;
+    }
+}
+@media screen and (min-width: 596px) and (max-width: 801px) {
+    #myCarousel .carousel-caption p {
+        margin: 1.3rem 1rem;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    #myCarousel .carousel-caption h3 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    #myCarousel .carousel-caption {
+        top: 40%;
+    }
+    .carouselInstruction #myCarousel .carousel-indicators {
+        top: 90%;
+    }
+    .carousel-inner .carousel-item button {
+        padding: 9px 18px;
+        background-color: transparent;
+        border: 1px solid white;
+        font-size: 0.8rem;
+        color: white;
+        transition: all 0.5s;
+        outline: none;
+    }
+}
+
+@media screen and (min-width: 802px) and (max-width: 1060px) {
+    #myCarousel .carousel-caption p {
+        margin: 1.3rem 1rem;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+    #myCarousel .carousel-caption h3 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    #myCarousel .carousel-caption {
+        top: 46%;
+    }
+    .carouselInstruction #myCarousel .carousel-indicators {
+        top: 90%;
+    }
+}
+
+@media screen and (min-width: 1061px) and (max-width: 1299px) {
+    #myCarousel .carousel-caption p {
+        margin: 1.3rem 8rem;
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+    #myCarousel .carousel-caption h3 {
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+    #myCarousel .carousel-caption {
+        top: 50%;
+    }
+    .carouselInstruction #myCarousel .carousel-indicators {
+        top: 75%;
+    }
+}
+/* WELCOME  */
+.welcome .welcome__title h4 {
+    position: relative;
+    padding-bottom: 30px;
+    font-size: 17px;
+    color: black;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+}
+.welcome .welcome__title h4::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+}
+.welcome .welcome__title h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2389b2;
+    margin-top: 50px;
+}
+.welcome__content .welcome__items p {
+    color: #999;
+    width: 80%;
+}
+.welcome .welcome__content .welcome__items {
+    line-height: 35px;
+    border: 1px solid black;
+    border-right: none;
+    padding-left: 30px;
+}
+.welcome .welcome__content .welcome__items.end {
+    border-right: 1px solid black;
+}
+.welcome__items i {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.welcome__items h3 {
+    color: #2389b2;
+    font-weight: 600;
+    font-size: 28px;
+    margin: 20px 0px;
+}
+.welcome__items h4 {
+    color: #000;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .welcome .welcome__content .welcome__items {
+        line-height: 35px;
+        border: 1px solid black;
+        margin: 20px 15px;
+    }
+}
+.welcome__content {
+    margin-bottom: 60px;
+}
+/* STATS  */
+.stats {
+    background: url("../img/banner4.jpg") no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    color: white;
+    background-attachment: fixed;
+}
+
+.stats .stats__title h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #2389b2;
+}
+.stats .stats__title p::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+}
+.stats .stats__title p {
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 3px;
+    position: relative;
+    padding-bottom: 30px;
+}
+.stats__title {
+    padding: 2.5rem 0;
+}
+.stats .stats__content i {
+    font-size: 2.5rem;
+    color: white;
+}
+.stats .stats__content h3 {
+    font-size: 21px;
+    color: #2389b2;
+    font-weight: 600;
+    margin: 30px 0;
+    letter-spacing: 1px;
+}
+.stats .stats__content p {
+    font-weight: 100;
+    font-size: 3rem;
+}
+.stats__content {
+    padding: 3rem 0;
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    .stats .stats__content h3 {
+        font-size: 18px;
+        color: #2389b2;
+        font-weight: 600;
+        margin: 30px 0;
+        letter-spacing: 1px;
+    }
+}
+
+/* OFFER */
+.offer__title h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #2389b2;
+}
+.offer .offer__title p {
+    display: block;
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 30px;
+}
+.offer .offer__title p::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+}
+.offer__content .offer__top {
+    margin-top: 30px;
+}
+.offer__content .offer__items i {
+    font-size: 40px;
+    color: #2389b2;
+    /* width: 100%;
+    text-align: center; */
+}
+.offer__content .offer__items h3 {
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.offer__content .offer__items p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #6b6b6b;
+}
+.offer__content .offer__items {
+    box-shadow: 0px 1px 8px 0px rgba(158, 158, 158, 0.75);
+    text-align: center;
+    padding: 15px;
+    margin: 15px 0;
+    width: 100%;
+    transition: all 0.7s;
+}
+.offer__content .offer__items:hover {
+    background-color: #12ccc3;
+}
+/* TESTIMONIALS  */
+.testimonials {
+    position: relative;
+    background: url("../images/banner3.jpg");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+
+.testimonials__title h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #2389b2;
+}
+.testimonials .testimonials__title p {
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 30px;
+}
+.testimonials .testimonials__title p::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -1px;
+}
+
+.testimonials__content {
+    background: rgba(0, 0, 0, 0.47);
+    box-shadow: 0px 1px 7px #8e8e8e;
+}
+.testimonials__items {
+    color: white;
+    margin: 0px 20px;
+}
+.testimonials__items p {
+    background-color: rgba(0, 0, 0, 0.57);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 30px 0;
+    position: relative;
+}
+.testimonials__items p::after {
+    content: "";
+    border-top: 9px solid rgba(0, 0, 0, 0.57);
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    top: 100%;
+    left: 30%;
+    position: absolute;
+}
+.testimonials__user {
+    margin-left: 30%;
+}
+.testimonials__items .testimonials__user img {
+    width: 27%;
+    height: 52px;
+    float: left;
+    margin-right: 10px;
+}
+.testimonials__items .testimonials__user h4 {
+    margin-bottom: 0;
+}
+.testimonials__items .testimonials__user span {
+    color: #2389b2;
+    font-size: 14px;
+    margin-left: 2px;
+}
+.testimonials__content .owl-theme .owl-dots .owl-dot span {
+    background-color: #2389b2;
+    opacity: 0.6;
+    outline: none;
+}
+.testimonials__content .owl-theme .owl-dots .owl-dot span:focus {
+    outline: none;
+}
+.testimonials__content .owl-theme .owl-dots .owl-dot.active span {
+    opacity: 1;
+    outline: none;
+}
+/* NEWS  */
+.news {
+    margin: 50px 0;
+}
+.news .news__title {
+    padding: 30px 0;
+}
+.news .news__title h2 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 40px;
+    color: #2389b2;
+}
+.news .news__title p {
+    font-size: 17px !important;
+    letter-spacing: 4px;
+    color: #000000;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 30px;
+}
+.news .news__title p::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: black;
+
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+}
+
+.news .news__text h5 {
+    color: #2389b2;
+    font-weight: 600;
+    font-size: 17px;
+    margin: 17px 0;
+}
+.news .news__text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    transition: all 0.5s;
+}
+.news .news__text h3:hover {
+    color: #2389b2;
+    cursor: pointer;
+}
+
+.news .news__content .news__text p {
+    margin: 1em 0 0;
+    color: #999999;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+.col-md-5.news__img img {
+    border: 3px solid #dedede;
+}
+/* MAP */
+.map iframe {
+    margin: 30px 0;
+    width: 100%;
+}
+/* FOOTER  */
+.footer {
+    background-color: #141414;
+    padding: 60px 0;
+    position: relative;
+}
+.footer .footer__items ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer .footer__items li {
+    line-height: 35px;
+}
+.footer .footer__items h4 {
+    color: #2389b2;
+    font-weight: 600;
+}
+.footer .footer__items li a {
+    color: #8b8b96;
+}
+.footer .footer__items.arrowRight li a i {
+    color: #2389b2;
+    margin-right: 14px;
+}
+.footer__info .footer__items .footer__text {
+    color: #8b8b96;
+    line-height: 35px;
+}
+.footer__info .footer__items a:hover {
+    text-decoration: none;
+}
+.footer__items.footer__icons li a i {
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    line-height: 30px;
+    margin-right: 12px;
+    text-align: center;
+}
+.footer .footer__signUp h4 {
+    color: #2389b2;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.footer .footer__signUp form input {
+    padding: 12px;
+    width: 72%;
+    color: #888;
+    margin-right: 12px;
+}
+.footer .footer__signUp form button {
+    padding: 12px 45px;
+    border: 1px solid #2389b2;
+    background-color: #2389b2;
+    color: white;
+    transition: all 0.5s;
+}
+.footer .footer__signUp form button:hover {
+    background-color: #2389b2;
+    outline: none;
+}
+.footer__design p {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+.footer__design p a {
+    color: #2389b2;
+    transition: all 0.7s;
+    text-decoration: none;
+}
+.footer__design p a:hover {
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .footer .footer__signUp form input {
+        padding: 12px;
+        width: 60%;
+        color: #888;
+        margin-right: 12px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer .footer__signUp h4 {
+        color: #2389b2;
+        font-weight: 600;
+        padding-top: 10px;
+        font-size: 22px;
+    }
+    .footer .footer__signUp form input {
+        padding: 12px;
+        width: 60%;
+        color: #888;
+        margin-right: 12px;
+    }
+}
+@media screen and (max-width: 581px) {
+    .footer__design p {
+        color: #fff;
+        font-size: 12px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Back to top */
+/* Back To Top  */
+.backtotop i {
+    color: #04bacd;
+    font-size: 37px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #04bacd;
+    line-height: 38px;
+    text-align: center;
+    /*opacity: 0;*/
+    /* làm ẩn luôn ,phím tắt nó k tab tới đc */
+    /* visibility: hidden;  */
+}
+.backtotop {
+    opacity: 0;
+    /* làm ẩn luôn ,phím tắt nó k tab tới đc */
+    visibility: hidden;
+}
+/* thư viện chỉ giúp hiện lại nút.mình phải chỉnh cho nó ẩn trc  */
+.cd-top--is-visible {
+    /* hiện lại là visible  */
+    visibility: visible;
+    opacity: 1;
+}
