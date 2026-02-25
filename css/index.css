@@ -97,7 +97,7 @@ header {
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .header__nav #logo h1 {
-        font-size: 2re m;
+        font-size: 2rem;
     }
     .navbar-nav .nav-item {
         margin: 0px 5px;
